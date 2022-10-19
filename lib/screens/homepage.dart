@@ -58,7 +58,8 @@ class _HomePageState extends State<HomePage> {
               },
               steps: <Step>[
                 Step(
-
+                  isActive: initialStepperIndex <= 10,
+                  state:  StepState.disabled,
                   title: const Text(
                     "Profile Picture",
                     style: TextStyle(
